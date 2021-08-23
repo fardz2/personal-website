@@ -36,7 +36,7 @@ export default function Main({ color }) {
                         <div className="overflow-hidden ">
                             <motion.div
                                 className="roboto  md:text-8xl text-5xl text-center  tracking-widest "
-                                initial={{ y: 100 }}
+                                initial={{ y: 85 }}
                                 animate={{ y: 0 }}
                                 transition={{ duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9], delay: 0.4 }}
                             >
@@ -46,7 +46,7 @@ export default function Main({ color }) {
                         </div>
                         <div className="overflow-hidden ">
                             <motion.div className="roboto md:text-9xl text-6xl text-center font-bold tracking-widest"
-                                initial={{ y: 150 }}
+                                initial={{ y: 115 }}
                                 animate={{ y: 0 }}
                                 transition={{ duration: 1.6, ease: [0.6, 0.01, -0.05, 0.9], delay: 0.7 }}
                             >
