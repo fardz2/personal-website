@@ -10,7 +10,7 @@ export default function About({ color }) {
     }, [])
     return (
         <motion.div
-            className={`text-${color} bg-white h-screen `}
+            className={`text-black bg-white h-screen `}
             exit={{ backgroundColor: "#1d1d1d" }}
             transition={{ delay: 0.01 }}
         >
