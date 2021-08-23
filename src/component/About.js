@@ -12,7 +12,7 @@ export default function About({ color }) {
         <motion.div
             className={`text-black bg-white h-screen `}
             exit={{ backgroundColor: "#1d1d1d" }}
-            transition={{ delay: 0.01 }}
+            transition={{ duration: 0.1, ease: [0.14, 0.74, 0.92, 0.33], delay: 0.20 }}
         >
             <Nav color={color} />
             <Side color={color} />
