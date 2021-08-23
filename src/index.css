@@ -1,8 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Morganite';
+  src: url('asset/font/Morganite-Light.ttf');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Morganite', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +18,38 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+
+  color: white;
+}
+
+.bg-main {
+  background-color: #1d1d1d;
+}
+
+
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("asset/img/grain.jpg");
+  opacity: 0.05;
+  animation: animate 1s steps(5) infinite;
+  z-index: 1
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
 }
