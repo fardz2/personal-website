@@ -11,7 +11,10 @@ module.exports = {
       width: {
 
         custom: "22rem"
-      }
+      },
+      colors: {
+        my_color: '#4dcb7a',
+      },
     },
   },
   variants: {
